@@ -85,6 +85,7 @@ function createLockdoorCanvas(gameSection, currentLocation, gameOutcome, user, d
             gameSection.appendChild(wrongGuessP);
             wrongGuesses++;
         } else {
+            submitButton.disabled = true;
             instructions.hidden = true;
             wrongGuessP.textContent = null;
             descriptionP.textContent = currentLocation.clue;

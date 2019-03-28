@@ -31,6 +31,9 @@ function createCrosswordCanvas(gameSection, currentLocation, gameOutcome, user, 
 
     gameSection.appendChild(crosswordForm);
     
+    const rightGuessP = document.createElement('p');
+    rightGuessP.id = 'right-guess';
+    gameSection.appendChild(rightGuessP);
     const wrongGuessP = document.createElement('p');
     gameSection.appendChild(wrongGuessP);
 
@@ -52,7 +55,8 @@ function createCrosswordCanvas(gameSection, currentLocation, gameOutcome, user, 
             wrongGuessP.textContent = 'Sorry chum, ' + wordGuess + ' ain\'t what I\'m looking for. Guess again.';
             wrongGuesses++;
         } else {
-            wrongGuessP.textContent = null;
+            rightGuessP.textContent = 'That\'s it !';
+            guessInput.disabled = true;
             instructions.hidden = true;
             descriptionP.textContent = currentLocation.clue;
             descriptionP.appendChild(mapAnchor);
@@ -60,10 +64,12 @@ function createCrosswordCanvas(gameSection, currentLocation, gameOutcome, user, 
             user.daysLeft--;
             saveUser(user);
             submitButton.hidden = true;
+            gameOutcome.appendChild(mapAnchor);
         }  
         
         if(wrongGuesses === 3) {
             submitButton.hidden = true;
+            guessInput.disabled = true;
             const loseMessageP = document.createElement('p');
             loseMessageP.textContent = 'You lost this game and wasted a day, try again tomorrow.';
             gameOutcome.appendChild(loseMessageP);

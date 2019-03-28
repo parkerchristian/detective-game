@@ -26,6 +26,11 @@ for(let i = 0; i < locationList.length; i++) {
             link.href = 'location.html?name=' + encodeURIComponent(location.name);
         } else {
             user.daysLeft--;
+            const promptArea = document.getElementById('prompt');
+            const wrongGuessPrompt = document.createElement('p');
+            wrongGuessPrompt.id = 'wrong-guess-prompt';
+            wrongGuessPrompt.textContent = 'Wrong Location... You\'re wasting time. You lost a day. Think hard about your clues.';
+            promptArea.appendChild(wrongGuessPrompt);
             updateStatusBar(user);
             saveUser(user);
         }

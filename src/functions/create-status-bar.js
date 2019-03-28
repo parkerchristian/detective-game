@@ -21,6 +21,9 @@ function createStatusBar(user) {
         const clueLi = document.createElement('li');
         clueLi.textContent = clue;
         cluesList.appendChild(clueLi);
+        if(clueLi === 3) {
+            break;
+        }
     }
     
     username.textContent += user.name;

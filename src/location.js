@@ -35,6 +35,9 @@ for(let i = 0; i < locationList.length; i++) {
         break;
     }
 }
+const locationNumber = document.createElement('h2');
+locationNumber.textContent = currentLocation.locationName;
+locationHeader.appendChild(locationNumber);
 
 const titleH1 = document.createElement('h1');
 titleH1.textContent = currentLocation.title;
