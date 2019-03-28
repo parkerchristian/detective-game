@@ -34,6 +34,7 @@ function createCrosswordCanvas(gameSection, currentLocation, gameOutcome, user, 
     const rightGuessP = document.createElement('p');
     rightGuessP.id = 'right-guess';
     gameSection.appendChild(rightGuessP);
+    
     const wrongGuessP = document.createElement('p');
     gameSection.appendChild(wrongGuessP);
 
@@ -56,6 +57,7 @@ function createCrosswordCanvas(gameSection, currentLocation, gameOutcome, user, 
             wrongGuesses++;
         } else {
             rightGuessP.textContent = 'That\'s it !';
+            wrongGuessP.textContent = '';
             guessInput.disabled = true;
             instructions.hidden = true;
             descriptionP.textContent = currentLocation.clue;

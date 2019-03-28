@@ -185,7 +185,7 @@ body {
 
 #result-message, #right-guess {
     color: red;
-    text-shadow: 2px 2px 4px #fefefe;
+    text-shadow: 2px 2px 4px #00000035;
 }
 
 button {
