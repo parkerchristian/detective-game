@@ -83,6 +83,13 @@ h1 {
     margin-bottom: 0;
     margin-left: 70px;
 }
+#wrong-guess-prompt {
+    color: red;
+    position: absolute;
+    top: 28vh;
+    width: 30vw;
+}
+
 #map-container {
     grid-column-start: 2;
     display: flex;
@@ -128,6 +135,24 @@ h1 {
     grid-row-start: 6;
 }
 #penthouseapartment:hover {
+    transform: scale(1.4);
+}
+
+#hospital {
+    grid-column-start: 6;
+    margin-top: 20px;
+    grid-row-start: 5;
+}
+#hospital:hover {
+    transform: scale(1.4);
+}
+#gym {
+    grid-column-start: 7;
+    margin-top: 35px;
+    margin-left: -25px;
+    grid-row-start: 7;
+}
+#gym:hover {
     transform: scale(1.4);
 }
 
