@@ -1,139 +1,143 @@
 body {
-    color: white;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+  color: white;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vw;
-    min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 #index-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
 }
 
 #title {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Inconsolata', monospace;
-    text-shadow: 1px 1px 3px black;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Inconsolata', monospace;
+  text-shadow: 1px 1px 3px black;
 }
 
 #start {
-    font-size: 18px;
-    padding: 15px 25px;
-    background-color: #cf2118;
-    font-family: 'Archivo Black', sans-serif;
-    color: white;
-    border: none;
-    text-transform: uppercase;
- } 
+  font-size: 18px;
+  padding: 15px 25px;
+  background-color: rgb(150, 20, 20);
+  font-family: 'Archivo Black', sans-serif;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+} 
 
 #start:hover {
-    background-color: darkred;
-    box-shadow: 0 0 10px 2px rgb(150, 20, 20);
+  background-color: darkred;
+  box-shadow: 0 0 10px 2px rgb(150, 20, 20);
 }
 
 #intro {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.783);
-    font-family: 'Inconsolata', monospace;
-    color:black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    padding: 10px;
-    text-align: center;
-    margin: 0px auto;
-    font-size: 22px;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.783);
+  font-family: 'Inconsolata', monospace;
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding: 10px;
+  text-align: center;
+  margin: 0px auto;
+  font-size: 22px;
 }
 
 #intro img {
-    width: 100px;
+  width: 100px;
 }
 
 #intro button {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 #name-input {
-    padding: 4px;
-    font-size: 20px;
+  padding: 4px;
+  font-size: 20px;
 }
 
 #start-story {
-    text-align: center;
-    border-radius: 1.5px;
-    font-size: 22px;
-    padding: 15px 25px;
-    background-color: white;
-    font-family: 'Archivo Black', sans-serif;
-    color: #cf2118;
-    border: none;
-    text-transform: uppercase;
-   }
-   #begin-story {
-    text-decoration: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-    color: #cf2118;
-   }
-   #start-story #begin-story {
-    color: #cf2118;
-    font-family: 'Archivo Black', sans-serif;
-   }
-   #start-story #begin-story:hover {
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;
-   }
-   #start-story #begin-story:hover {
-    color: #ffffff;
-   }
-   @-webkit-keyframes neon1 {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cf2118, 0 0 70px #cf2118, 0 0 80px #cf2118, 0 0 100px #cf2118, 0 0 150px #cf2118;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #cf2118, 0 0 35px #cf2118, 0 0 40px #cf2118, 0 0 50px #cf2118, 0 0 75px #cf2118;
-    }
-   }
-   @-moz-keyframes neon1 {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cf2118, 0 0 70px #cf2118, 0 0 80px #cf2118, 0 0 100px #cf2118, 0 0 150px #cf2118;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #cf2118, 0 0 35px #cf2118, 0 0 40px #cf2118, 0 0 50px #cf2118, 0 0 75px #cf2118;
-    }
-   }
-   @keyframes neon1 {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cf2118, 0 0 70px #cf2118, 0 0 80px #cf2118, 0 0 100px #cf2118, 0 0 150px #cf2118;
-    }
-    to {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #cf2118, 0 0 35px #cf2118, 0 0 40px #cf2118, 0 0 50px #cf2118, 0 0 75px #cf2118;
-    }
-   }
-   @media (max-width: 650px) {
-    #start-story {
-      font-size: 3.5em;
-    }
-   }
+  text-align: center;
+  border-radius: 1.5px;
+  font-size: 22px;
+  padding: 15px 25px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Archivo Black', sans-serif;
+  border: none;
+  text-transform: uppercase;
+}
+#begin-story {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#start-story #begin-story {
+  color: #fbff04;
+  text-shadow: 5px 5px 5px black;
+  font-size: 2.2em;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: .1em;
+  text-transform: none;
+  cursor: pointer;
+}
+#start-story #begin-story:hover {
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+#start-story #begin-story:hover {
+  color: #ffffff;
+}
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fbff04, 0 0 70px #fbff04, 0 0 80px #fbff04, 0 0 100px #fbff04, 0 0 150px #fbff04;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fbff04, 0 0 35px #fbff04, 0 0 40px #fbff04, 0 0 50px #fbff04, 0 0 75px #fbff04;
+  }
+  }
+  @-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fbff04, 0 0 70px #fbff04, 0 0 80px #fbff04, 0 0 100px #fbff04, 0 0 150px #fbff04;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fbff04, 0 0 35px #fbff04, 0 0 40px #fbff04, 0 0 50px #fbff04, 0 0 75px #fbff04;
+  }
+  }
+  @keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fbff04, 0 0 70px #fbff04, 0 0 80px #fbff04, 0 0 100px #fbff04, 0 0 150px #fbff04;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fbff04, 0 0 35px #fbff04, 0 0 40px #fbff04, 0 0 50px #fbff04, 0 0 75px #fbff04;
+  }
+  }
+  @media (max-width: 650px) {
+  #start-story {
+    font-size: 3.5em;
+  }
+}
