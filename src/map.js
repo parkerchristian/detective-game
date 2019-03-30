@@ -8,12 +8,18 @@ import muteToggle from './functions/mute-toggle.js';
 const locationLinks = document.getElementById('map');
 
 const soundtrack = new Audio('../assets/audio/map.mp3');
+const wrongChoiceSound = new Audio('../assets/audio/bells.mp3');
+
 soundtrack.play();
 
 muteToggle(soundtrack);
 
 const user = loadUser();
 createStatusBar(user);
+
+if(user.daysLeft === 0 || user.daysLeft <= 0) {
+    window.location = 'end.html';
+}
 
 for(let i = 0; i < locationList.length; i++) {
     const location = locationList[i];
@@ -25,6 +31,12 @@ for(let i = 0; i < locationList.length; i++) {
         if(user.receivedClues === location.requiredClues) {
             link.href = 'location.html?name=' + encodeURIComponent(location.name);
         } else {
+            wrongChoiceSound.play();
+            setTimeout(function() { 
+                wrongChoiceSound.pause(); 
+                wrongChoiceSound.currentTime = 0;
+            }, 1500);
+
             user.daysLeft--;
             const promptArea = document.getElementById('prompt');
             const wrongGuessPrompt = document.createElement('p');
@@ -35,11 +47,11 @@ for(let i = 0; i < locationList.length; i++) {
             saveUser(user);
         }
 
-        if(user.daysLeft === 0) {
+        if(user.daysLeft === 0 || user.daysLeft <= 0) {
             window.location = 'end.html';
         }
     });
-    
+
     link.id = location.name;
     link.appendChild(icon);
     locationLinks.appendChild(link);
