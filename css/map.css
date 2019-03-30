@@ -101,8 +101,8 @@ h1 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: center;
-    height: 650px;
-    width: 650px;
+    height: 700px;
+    width: 700px;
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
