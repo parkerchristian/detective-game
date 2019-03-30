@@ -42,13 +42,11 @@ button {
     font-family: 'Archivo Black', sans-serif;
     border: none;
     margin: 20px 5px;
- } 
-
-button a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-}
+    cursor: pointer;
+ } 
 
 button:hover {
     background-color: darkred;
